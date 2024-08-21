@@ -55,13 +55,13 @@
 
 /* Animation when active */
 .menu-btn.active .menu-btn-burger {
-    background-color: transparent; /* Ocultar la barra central */
+    background-color: transparent; 
 }
 
 .menu-btn.active .menu-btn-burger::before {
-    transform: translateY(6px) rotate(45deg); /* Transformar la línea superior en la parte superior de la "X" */
+    transform: translateY(6px) rotate(45deg); 
 }
 
 .menu-btn.active .menu-btn-burger::after {
-    transform: translateY(-6px) rotate(-45deg); /* Transformar la línea inferior en la parte inferior de la "X" */
+    transform: translateY(-6px) rotate(-45deg); 
 }

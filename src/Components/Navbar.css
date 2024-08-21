@@ -1,14 +1,15 @@
 .navbar-container {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.623);
+    background-color: rgba(0, 0, 0, 0.191);
     color: aliceblue;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: flex-start;
     justify-content: flex-start;
-    
+    position: absolute;
+    backdrop-filter: blur(4px);
 
 
     a {
