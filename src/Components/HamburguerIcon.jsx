@@ -20,6 +20,10 @@ function HamburguerIcon({ toggleNavbar, resetIcon }) {
   return (
     <section className="menu-section">
       <div className={`menu-btn ${isActive ? 'active' : ''}`} onClick={handleClick}>
+      <div className="cart-icon">
+          <img  src='src/assets/cart/white-cart.png'  alt="cart" />
+        </div>
+        
         <div className="menu-btn-burger"></div>
       </div>
     </section>

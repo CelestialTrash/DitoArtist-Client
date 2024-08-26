@@ -1,68 +1,79 @@
 .menu-section {
-    position: relative;
-    width: 100vw;
-    height:12rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0px 20px;
-    background-color: #27272B;;
-    color: aliceblue;
-    text-align: center;
-    z-index: 1000;
-    
+  position: relative;
+  width: 100vw;
+  height: 12rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0px 20px;
+  background-color: #27272b;
+  color: aliceblue;
+  text-align: center;
+  z-index: 1000;
 }
 
 .menu-btn {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn-burger {
-    width: 20px;
-    height: 2px;
-    background-color: white;
-    border-radius: 5px;
-    position: relative;
-    transition: all 0.5s ease-in-out;
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn-burger::before,
 .menu-btn-burger::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    border-radius: 5px;
-    background-color: white;
-    transition: all 0.5s ease-in-out;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn-burger::before {
-    top: -6px;
+  top: -6px;
 }
 
 .menu-btn-burger::after {
-    top: 6px;
+  top: 6px;
 }
 
 /* Animation when active */
 .menu-btn.active .menu-btn-burger {
-    background-color: transparent; /* Ocultar la barra central */
+  background-color: transparent; /* Ocultar la barra central */
 }
 
 .menu-btn.active .menu-btn-burger::before {
-    transform: translateY(6px) rotate(45deg); /* Transformar la línea superior en la parte superior de la "X" */
+  transform: translateY(6px) rotate(45deg); /* Transformar la línea superior en la parte superior de la "X" */
 }
 
 .menu-btn.active .menu-btn-burger::after {
-    transform: translateY(-6px) rotate(-45deg); /* Transformar la línea inferior en la parte inferior de la "X" */
+  transform: translateY(-6px) rotate(-45deg); /* Transformar la línea inferior en la parte inferior de la "X" */
+}
+
+.cart-icon {
+  position: absolute;
+  right: 50px;
+  box-sizing: border-box;
+  img {
+    overflow: clip;
+    overflow-clip-margin: content-box;
+    height: 30px;
+    width: 30px;
+  }
 }

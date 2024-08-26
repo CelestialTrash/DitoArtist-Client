@@ -1,17 +1,22 @@
+//REACT
 import { useState, useContext } from "react";
 import { Routes, Route } from "react-router-dom";
+//Pages
 import SignupPage from "./Pages/SignupPage";
 import LoginPage from "./Pages/LoginPage";
 import Bio from "./Pages/Bio";
-import { AuthContext } from "./context/user.context";
-import HamburguerIcon from "./Components/HamburguerIcon";
 import HomePage from "./Pages/HomePage";
 import ReleasesPage from "./Pages/ReleasesPage";
-import Navbar from "./Components/Navbar";
-import "./App.css";
 import NotFoundPage from "./Pages/NotFoundPage";
 import ProductsPage from "./Pages/ProductsPage";
 import ProductDetailsPage from "./Pages/ProductDetailsPage";
+//Context
+import { AuthContext } from "./context/user.context";
+//Components
+import HamburguerIcon from "./Components/HamburguerIcon";
+import Navbar from "./Components/Navbar";
+//CSS
+import "./App.css";
 import './Components/ButtonStyles.css'
 
 function App() {
@@ -43,7 +48,7 @@ function App() {
 
 
   return (
-    <>
+     <>
       <HamburguerIcon toggleNavbar={toggleNavbar} resetIcon={isNavbarVisible} />
       {isNavbarVisible && (
         <Navbar isNavbarClosing={isNavbarClosing} closeNavbar={closeNavbar} />
